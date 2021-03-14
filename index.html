@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>NFM - Near Field Market</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/account.css">
+  <script src="/javascript/fond.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script src="‪C:\Users\Bini\node_modules\passport-local\lib\index.js"></script>
+</head>
+
+<body>
+  <main>
+    <div id="container">
+      <form action="/login" method="post">
+        <input type="email" name="username" placeholder="E-mail" onclick="buttonCode()"><br>
+        <input type="password" name="password" placeholder="Password" style="display: none;" id="pass"><br>
+        <input type="submit" value="SIGN IN / UP"><br>
+      </form> 
+    </div>
+    </main>
+
+<script>
+
+ function buttonCode(){
+    // on réccupère l'élément form.
+    var pass = document.getElementById('pass');
+  
+    // Condition pour afficher/cacher le formulaire en fonction de son état
+    if(pass.style.display == 'block'){
+        pass.style.display = 'none';
+    }else{
+        pass.style.display = 'block';
+    }
+}
+
+</script>
+</body>
+</html>

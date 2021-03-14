@@ -1,0 +1,127 @@
+
+
+#section1{
+    background-image: url(../pictures/2D88YG6-blure.png);
+    background-size: contain;
+    background-position-y: center;
+}
+#slide1{
+    background-image: url(../pictures/63660.jpg);
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+
+
+}
+
+#slide2{
+    background-image: url(../pictures/52467544-3d-rfid-chip-implant.png);
+    background-size: cover;
+    background-position-x: center;
+}
+
+#slide3{
+    background-image: url(../pictures/20896378-blure.png);
+    background-size: cover;
+    background-position-x: center;
+
+}
+
+#section3{
+    background-color: rgb(26, 228, 19);
+}
+iframe{
+    position: absolute;
+    bottom: 6em;
+    left: 5rem;
+}
+#section4{
+    background-color: rgb(255, 0, 0);
+}
+
+#logo{
+    height: 10%;
+    position: absolute;
+    top: 2em;
+}
+
+#profile{
+    position: absolute;
+    right: 5em;
+    top: 2em;
+    height: 4em;
+    width: 4em;
+    overflow:hidden;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%;
+}
+
+#menu{
+    position: absolute;
+    height: 11em;
+    width: 10em;
+    background-color: rgb(37, 44, 37);
+    top: 6em;
+    right: 2em;
+}
+
+li, ul{
+    list-style-type: none;
+    line-height: 2;
+}
+
+a, a:visited{
+    color: white;
+}
+
+#solde{
+    font-size: 15em;
+    color: #1eff69;
+    left: auto;
+    text-align: center;
+    text-shadow: rgb(49, 49, 49) 1px 0 10px;
+}
+
+#more{
+    margin-left: auto;
+    margin-right: auto;
+    height: 3em;
+    width: 7em;
+    border-radius: 15%;
+    background-color: #1eff69;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+#sec3texte{
+    color: chartreuse;
+}
+
+#input{
+    position: absolute;
+    height: 1em;
+    width: 2.5em;
+    font-size: 8em;
+    left: 4em;
+    background-color: rgb(100, 100, 100);
+    border: none;
+    box-shadow: 10px 5px 5px black;
+}
+#choose{
+    position: absolute;
+    top: 1em;
+    left: 0.5em;
+    font-size: 4em;
+}
+
+#next{
+    position: absolute;
+    height: 5em;
+    width: 10em;
+    background-color: rgb(32, 81, 109);
+    left: 45em;
+    bottom: 3em;
+}
