@@ -1,4 +1,35 @@
 /* Smartphones paysage & tablettes */
-@media (min-width: 481px) and (max-width: 768px) {
-    …
+@media (min-width: 481px) {
+    #logo{
+        height: 10%;
+        position: absolute;
+        top: 1em;
+    }
+
+    #profile{
+        position: absolute;
+        right: 3em;
+        top: 1em;
+        height: 6em;
+        width: 6em;
+        overflow:hidden;
+        -webkit-border-radius:100%;
+        -moz-border-radius:100%;
+        border-radius:100%;
+    }
+
+    #menu{
+        position: absolute;
+        height: 25em;
+        width: 17em;
+        background-color: rgb(37, 44, 37);
+        top: 12em;
+        right: 2em;
+    }
+
+    li, ul{
+        list-style-type: none;
+        line-height: 2;
+        font-size: 4em;
+    }
 }
