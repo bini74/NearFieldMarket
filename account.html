@@ -5,6 +5,7 @@
   <title>NFM - Near Field Market</title>
   <link rel="stylesheet" href="css/account.css" />
   <link rel="stylesheet" href="css/card.css" />
+  <link rel="stylesheet" href="css/number.css" />
   <link rel="stylesheet" href="css/responsive.css" />
   <script src="/javascript/card.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.css" />
@@ -17,7 +18,7 @@
     <div id="fullpage">
         <!-- Section 1 -->
         <div class="section" id="section1">
-            <img src="/pictures/logo.png" id="logo" />
+            <a href="/account.html"><img src="/pictures/logo.png" id="logo" /></a>
             <img src="/pictures/modele-humain-sans-visage-mannequin-vierge-partie-du-corps-homme-femme-isole-fond_1441-2248.jpg" id="profile" onclick="buttonCode()" />
             <div id="menu" style="display: none;">
                 <ul>
@@ -33,7 +34,7 @@
                 </div>
             <a href="#buy">
                 <div id="more">
-                    <br /> Buy more here
+                     Buy More Here
                 </div>
             </a>
 
@@ -48,8 +49,42 @@
               
             <div class="slide" id="slide1">
                 
-                <h1 id="choose">Type the number of credits you want to buy  : </h1>
-              <input type="text" name="number" id="input"placeholder="num" />
+                <h1 id="choose">Type the number of credits <br /> you want to buy  : </h1>
+              <input type="text" name="number" placeholder="num" />
+              <div class="asd">zafer</div>
+  <!-- ## wrapper -->
+  <div class="wrapper">
+    <!-- ## phone area -->
+    <div class="phone">
+      <span class="title">Type the number here</span>
+      <!-- ## phone area -->
+      <div class="phone-container">
+        <input type="text" maxlength="11" class="number-input" id="numberInput" value="" placeholder="Number"/>
+        <!-- ## keyboard -->
+        <div class="keyboard">
+          <div class="number">
+            <span data-number="1"><i>1</i></span>
+            <span data-number="2"><i>2</i></span>
+            <span data-number="3"><i>3</i></span>
+            <span data-number="4"><i>4</i></span>
+            <span data-number="5"><i>5</i></span>
+            <span data-number="6"><i>6</i></span>
+            <span data-number="7"><i>7</i></span>
+            <span data-number="8"><i>8</i></span>
+            <span data-number="9"><i>9</i></span>
+            
+          </div>
+          <div class="number aling-right">
+            <span class="call-button"><i><img src="https://image.flaticon.com/icons/svg/40/40316.svg" alt="" /></i></span>
+            <span data-number="0"><i>0</i></span>
+            <span><i class="delete"><img src="https://image.flaticon.com/icons/svg/61/61167.svg" width="30" height="30" alt="Left Arrow free icon" title="Left Arrow free icon"></i></span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
               <a href="#buy/1"><button id="next">Next</button></a>
 
             </div>
@@ -244,6 +279,42 @@ btn.onclick = function() {
         button: "Aww yiss!",
     });
 }
+
+</script>
+
+<script>
+
+$(".number-input").keyup(function(e){
+  if($(this).val().length >= 11)
+       $(".call-button").addClass("show");  
+  if(e.which == 8)
+     $(".call-button").removeClass("show");
+})
+//called when key is pressed in textbox
+$(".number-input").keypress(function (e) {
+     //if the letter is not digit then display error and don't type anything
+     if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+        //display error message
+               return false;
+    }
+});
+
+
+$("[data-number]").on('click',function(){
+  if($(".number-input").val().length < 11){
+    var phoneNumber = $(".number-input").val() + $(this).data("number");
+    $(".number-input").val(phoneNumber);
+  }
+  if($(".number-input").val().length == 11)
+     $(".call-button").addClass("show");  
+});
+
+$(".delete").on('click',function(){
+  var phoneNumber = $(".number-input").val().slice(0,-1);
+  $(".number-input").val("");
+  $(".number-input").val(phoneNumber);
+  $(".call-button").removeClass("show");
+});
 
 </script>
 
