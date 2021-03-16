@@ -86,29 +86,10 @@ a, a:visited{
 #more{
     margin-left: auto;
     margin-right: auto;
-    height: 3em;
-    width: 7em;
-    border-radius: 15%;
-    background-color: #1eff69;
-    font-size: 1em;
-    font-weight: bold;
-    text-align: center;
-    color: white;
 }
 
 #sec3texte{
     color: chartreuse;
-}
-
-#input{
-    position: absolute;
-    height: 1em;
-    width: 2.5em;
-    font-size: 8em;
-    left: 4em;
-    background-color: rgb(100, 100, 100);
-    border: none;
-    box-shadow: 10px 5px 5px black;
 }
 #choose{
     position: absolute;

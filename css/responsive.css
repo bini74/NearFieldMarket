@@ -1,5 +1,5 @@
 /* Smartphones paysage & tablettes */
-@media (min-width: 481px) {
+@media (max-width: 481px) {
     #logo{
         height: 10%;
         position: absolute;
@@ -57,14 +57,4 @@
         text-align: center;
         color: white;
     }
-
-    #input{
-        height: 2em;
-        width: 5em;
-        font-size: 8em;
-        right: 5em;
-        background-color: rgb(42, 211, 107);
-        border: none;
-    }
-
 }
