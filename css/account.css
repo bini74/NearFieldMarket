@@ -43,14 +43,15 @@ iframe{
     height: 10%;
     position: absolute;
     top: 2em;
+    left: 1em;
 }
 
 #profile{
     position: absolute;
     right: 5em;
     top: 2em;
-    height: 4em;
-    width: 4em;
+    height: 5em;
+    width: 5em;
     overflow:hidden;
     -webkit-border-radius:100%;
     -moz-border-radius:100%;
@@ -62,7 +63,7 @@ iframe{
     height: 11em;
     width: 10em;
     background-color: rgb(37, 44, 37);
-    top: 6em;
+    top: 8em;
     right: 2em;
 }
 
@@ -84,8 +85,7 @@ a, a:visited{
 }
 
 #more{
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 43em;
 }
 
 #sec3texte{
@@ -106,3 +106,6 @@ a, a:visited{
     left: 45em;
     bottom: 3em;
 }
+
+
+/******************************************************************************/

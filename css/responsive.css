@@ -1,5 +1,4 @@
-/* Smartphones paysage & tablettes */
-@media (max-width: 481px) {
+@media (max-height: 2778px) {
     #logo{
         height: 10%;
         position: absolute;
@@ -10,8 +9,8 @@
         position: absolute;
         right: 3em;
         top: 1em;
-        height: 7em;
-        width: 7em;
+        height: 10em;
+        width: 10em;
         overflow:hidden;
         -webkit-border-radius:100%;
         -moz-border-radius:100%;
@@ -46,15 +45,9 @@
         text-shadow: rgb(49, 49, 49) 1px 0 20px;
     }
 
-    #more{
-        margin-left: auto;
-        margin-right: auto;
-        height: 2em;
-        width: 7em;
-        border-radius: 5%;
-        background-color: #1eff69;
-        font-size: 6em;
-        text-align: center;
-        color: white;
+    #learn-more{
+        position: absolute;
+        margin-left: 30em;
+        height: 20em;
     }
 }
