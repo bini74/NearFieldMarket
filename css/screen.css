@@ -1,0 +1,200 @@
+@media screen and (max-width: 1000px)
+{
+
+    #menu
+{
+  position: absolute;
+  width: 620px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ffffff;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+    #menuToggle
+{
+  display: block;
+  position: relative;
+  top: 20px;
+  left: 2em;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  font-size: 180%;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: #1EFF00;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -4px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+
+    #menuToggle
+{
+  display: block;
+  position: relative;
+  top: 40px;
+  left: 2em;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+
+    #menuToggle span
+{
+  display: block;
+  width: 125px;
+  height: 20px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #858585;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menu li
+{
+    text-decoration: underline;
+  padding: 10px 0;
+  font-size: 80px;
+}
+
+
+    .menu_{
+        background-color: rgb(255, 255, 255);
+        height: 10em;
+        width: 100%;
+        position: fixed;
+    }
+    
+    .menu_:hover{
+        background-color: rgb(255, 255, 255);
+        height: 10em;
+        width: 100%;
+        position: fixed;
+    }
+
+    #user{
+        top: 2em;
+        position: fixed;
+        float: right;
+        right: 2%;
+        height: 5em;
+        width: auto;
+    }
+    #magasins{
+        position: fixed;
+        right: 11%;
+        top: 2em;
+        height: 5em;
+        width: auto;
+    }
+    #bag{
+        top: 2em;
+        fill: #ffffff;
+        position: fixed;
+        right: 20%;
+        height: 5em;
+        width: auto;
+    }
+    
+    #logo{
+        position: fixed;
+        margin-left: 45%;
+        margin-right: 55%;
+        top: 6px;
+        height: 9em;
+        width: auto;
+    }
+
+    title{
+      font-size: 2000%;
+      text-shadow: black;
+      color: black;
+      font-family: 'Oswald', sans-serif;
+  }
+  .subtitle{
+      font-size: 800%;
+      color: black;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    #store{
+      float: none;
+      height: auto;
+      width: 100%;
+      border: none;
+  }
+
+  #chip{
+    height: auto;
+    float: none;
+    width: 100%;
+    border: none;
+  }
+
+  .card-one{
+    height: auto;
+    width: 100%;
+}
+
+.card-two{
+  height: auto;
+  width: 100%;
+}
+
+.chip-texte, .store-texte{
+  top: auto;
+  font-size: 60px;
+  color: rgb(0, 0, 0);
+}
+
+
+}

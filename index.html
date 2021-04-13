@@ -3,38 +3,82 @@
 <head>
   <meta charset="utf-8">
   <title>NFM - Near Field Market</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/account.css">
-  <script src="/javascript/fond.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-  <script src="‪C:\Users\Bini\node_modules\passport-local\lib\index.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" media="screen and (max-width: 1280px)" href="css/screen.css" />
 </head>
 
 <body>
+
+  <div class="header">
+    <div class="menu_">
+
+<!--    Made by Erik Terwan    -->
+
+<nav role="navigation">
+  <div id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+      <a href="#"><li>Buy an NFP</li></a>
+      <a href="#"><li>Ncoin</li></a>
+      <a href="#"><li>About</li></a>
+      <a href="contact.html"><li>Contact</li></a>
+    </ul>
+  </div>
+</nav>
+
+  <a href="index.html"><img src="pictures/logo2.PNG" id="logo" /></a>
+
+<div class="magasins">
+  <a href="magasin"><img src="pictures/broche.svg" id="magasins"/></a>
+</div>
+<div class="user">
+  <a href="user.html"><img src="pictures/utilisateur.svg" id="user"/></a>
+</div>
+<div class="bag">
+  <a href="bag"><img src="pictures/bag.svg" id="bag"/></a>
+</div>
+     </div>
+
+
+
+<div class="wrapper">
+  <div class="content">
+    <h1 class="title">NFM</h1>
+    <p class="subtitle">Pay Differently</p>
+  </div>
+</div>
+  </div>
+
   <main>
-    <div id="container">
-      <form action="/login" method="post">
-        <input type="email" name="username" placeholder="E-mail" onclick="buttonCode()"><br>
-        <input type="password" name="password" placeholder="Password" style="display: none;" id="pass"><br>
-        <input type="submit" value="SIGN IN / UP"><br>
-      </form> 
+    <div class="card-one">
+    <div class="store">
+      <img src="/pictures/store.jpg" id="store" />
+      </div>
+      <div class="store-texte">
+        <h1>NFM Store</h1>
+        <p>Les murs de nos NFM Store sont entièrement en verre par-balle.
+          <br >
+          Ils disposent des derniers rayons NFR intelligents qui évite que vous rocherez dans tout notre magasin votre produit.
+           </p>
+      </div>
     </div>
-    </main>
 
-<script>
+    <div class="card-two">
+      <div class="chip">
+        <img src="/pictures/G2T92G.png" id="chip">
+      </div>
+      <div class="chip-texte">
+        <h1>NFP Chip</h1>
+        <p>Il faut vous disposez de notre dernière puce NFP qui sert de portefeuille numérique.
+          <br />
+           Avec, vous pouvez entrer dans le magasin et en sortir sans même vous rendre compte que vous payer. Plus de file d’attente !
+           </p>
+      </div>
+    </div>
 
- function buttonCode(){
-    // on réccupère l'élément form.
-    var pass = document.getElementById('pass');
-  
-    // Condition pour afficher/cacher le formulaire en fonction de son état
-    if(pass.style.display == 'block'){
-        pass.style.display = 'none';
-    }else{
-        pass.style.display = 'block';
-    }
-}
-
-</script>
+  </main>
 </body>
 </html>

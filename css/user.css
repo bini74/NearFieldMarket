@@ -1,0 +1,116 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #161616;
+}
+
+.container {
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  display: block;
+  margin: auto;
+  padding: 1rem 1.25rem;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-shadow:
+    -2px 4px 4px #094309, 
+    0 0 10px #1EFF69,
+    inset 1px 1px 1px white;
+  color: #1EFF69;
+  border: 2px solid;
+  border-radius: 4px;
+  background-color: transparent;
+  box-shadow: 
+    0 1px 2px rgba(0,0,0, 0.6), 
+    2px 1px 4px rgba(0,0,0, 0.3), 
+    2px 4px 3px rgba(3,0,128, 0.3), 
+    0 0 7px 2px #1EFF69, 
+    inset 0 1px 2px rgba(0,0,0, 0.6), 
+    inset 2px 1px 4px rgba(0,0,0, 0.3), 
+    inset 2px 4px 3px rgba(5, 68, 3, 0.3), 
+    inset 0 0 7px 2px #1EFF69;
+  animation: flickering 5s infinite;
+}
+
+@keyframes flickering {
+  0% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+  
+  2% {
+    border-color: #1EFF69;
+    opacity: 1;
+  }
+  
+  4% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+  
+  8% {
+    border-color: #1EFF69;
+    opacity: 1;
+  }
+  
+  28% {
+    border-color: #1EFF69;
+    opacity: 1;
+  }
+  
+  30% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+  
+  36% {
+    border-color: #1EFF69;
+    opacity: 1;
+  }
+  
+  100% {
+    border-color: #1EFF69;
+    opacity: 1;
+  }
+}
+
+header{
+    z-index: 1;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 8em;
+    width: 100%;
+    position: fixed;
+    top: -0.5%;
+    right: 1px
+}
+
+#nfm{
+    margin-left: 45%;
+    margin-right: 55%;
+    top: 6px;
+    height: 10em;
+    width: auto;
+}
+
+@media screen and (min-width: 1001px)
+{
+
+#separation{
+    position: absolute;
+    height: 100%;
+    background-color: #1EFF69;
+    box-shadow: 5px #1EFF69;
+    width: 5px;
+    align-items: center;
+    left: 50%;
+}
+
+}

@@ -1,0 +1,23 @@
+@media screen and (max-width: 1000px)
+{
+
+    a{
+        font-size: 400%;
+    }
+
+    header{
+        background-color: rgb(255, 255, 255);
+        height: 10em;
+        width: 100%;
+        position: fixed;
+    }
+
+    #nfm{
+        margin-left: 45%;
+        margin-right: 55%;
+        top: 6px;
+        height: 13em;
+        width: auto;
+    }
+
+}
