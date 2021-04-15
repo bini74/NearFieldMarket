@@ -278,3 +278,9 @@ top: auto;
 color: rgb(0, 0, 0);
 text-align: left;
 }
+
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}

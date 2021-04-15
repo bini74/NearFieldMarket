@@ -1,0 +1,34 @@
+@media screen and (min-width: 1000px)
+{
+
+
+    .screen-header-left {
+        filter: grayscale(100%);
+        margin-right: auto;
+      }
+
+
+}
+
+
+
+
+@media screen and (max-width: 1000px)
+{
+
+header{
+  background-color: rgb(255, 255, 255);
+  height: 15em;
+  width: 100%;
+  position: fixed;
+}
+
+#nfm{
+  margin-left: 45%;
+  margin-right: 55%;
+  top: 6px;
+  height: 15em;
+  width: auto;
+}
+
+}

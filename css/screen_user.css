@@ -7,17 +7,17 @@
 
     header{
         background-color: rgb(255, 255, 255);
-        height: 10em;
+        height: 12em;
         width: 100%;
         position: fixed;
-    }
-
-    #nfm{
+      }
+      
+      #nfm{
         margin-left: 45%;
         margin-right: 55%;
         top: 6px;
-        height: 13em;
+        height: 3em;
         width: auto;
-    }
+      }
 
 }

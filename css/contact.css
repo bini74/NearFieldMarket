@@ -79,6 +79,9 @@ header{
   .screen-header-left {
     margin-right: auto;
   }
+  .screen-header-left:hover{
+    filter: none;
+  }
   
   .screen-header-button {
     display: inline-block;
@@ -88,7 +91,7 @@ header{
     border-radius: 8px;
     background: white;
   }
-  
+
   .screen-header-button.close {
     background: #ff0000;
   }
@@ -203,7 +206,7 @@ header{
     margin-left: 45%;
     margin-right: 55%;
     top: 6px;
-    height: 10em;
+    height: 8em;
     width: auto;
 }
   
@@ -233,24 +236,24 @@ header{
     .screen-body {
       padding: 150px;
     }
-  
-    .screen-body-item {
-      padding: 0;
-    }
 
     header{
-        background-color: rgb(255, 255, 255);
-        height: 10em;
-        width: 100%;
-        position: fixed;
-    }
-    #nfm{
-        margin-left: 45%;
-        margin-right: 55%;
-        top: 6px;
-        height: 13em;
-        width: auto;
-    }
+      z-index: 1;
+      position: absolute;
+      background-color: rgb(0, 0, 0);
+      height: 8em;
+      width: 100%;
+      position: fixed;
+      top: -0.5%;
+      right: 1px
+  }
+  #nfm{
+    margin-left: 45%;
+    margin-right: 55%;
+    top: 6px;
+    height: 8em;
+    width: auto;
+}
   }
   
   

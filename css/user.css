@@ -12,7 +12,7 @@ body {
   align-items: center;
 }
 
-a {
+#in, #out {
   display: block;
   margin: auto;
   padding: 1rem 1.25rem;
@@ -96,11 +96,11 @@ header{
     margin-left: 45%;
     margin-right: 55%;
     top: 6px;
-    height: 10em;
+    height: 8em;
     width: auto;
 }
 
-@media screen and (min-width: 1001px)
+@media screen and (min-width: 1000px)
 {
 
 #separation{

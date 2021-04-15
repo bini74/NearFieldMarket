@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --brandColor:#1EFF69;
+  --brandColorDark:#0ba53b;
+}
+
+[v-cloak] {
+  opacity: 0;
+}
+
+
+header{
+  z-index: 1;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  height: 8em;
+  width: 100%;
+  position: fixed;
+  top: -0.5%;
+  right: 1px
+}
+#nfm{
+  margin-left: 45%;
+  margin-right: 55%;
+  top: 6px;
+  height: 8em;
+  width: auto;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  background: #202020;
+}
+
+#app {
+  border-top: 0.5em solid var(--brandColor);
+  max-width: 800px;
+  margin: 0 auto;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 96%;
+  transform: translate(-50%, -50%);
+  padding: 2em 3em 1em;
+  background: rgb(65, 65, 65);
+  overflow: hidden;
+  box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.2);
+  -webkit-animation: enterFromBottom 0.7s 0.3s ease-out both;
+          animation: enterFromBottom 0.7s 0.3s ease-out both;
+}
+@media screen and (max-width: 500px) {
+  #app {
+    padding: 2em 1em 1em;
+  }
+}
+
+.actions button {
+  all: unset;
+  display: inline-block;
+  padding: 1em;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid;
+  color: white;
+  border: none;
+  background: var(--brandColor);
+  transition: 250ms;
+  margin: 0 0.2em 0 0;
+  opacity: 0.4;
+}
+.actions button.active {
+  opacity: 1;
+  background: var(--brandColorDark);
+}
+
+.form-enter {
+  transform: translateY(-1em);
+  opacity: 0;
+}
+.form-leave-to {
+  transform: scale(0.95);
+  opacity: 0;
+}
+.form-enter-active {
+  transition: 0.3s ease-out;
+}
+.form-leave-active {
+  transition: 0.3s ease;
+}
+
+form h2, header h2 {
+  text-align: center;
+  color: var(--brandColor);
+}
+
+.register-form, .signin-form {
+  margin: 2em 0;
+  padding: 1em;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+.form-group label {
+	color: white;
+  flex: 1;
+  text-align: right;
+  margin-right: 2em;
+}
+.form-group input {
+  font-size: inherit;
+  border: none;
+  background: rgb(160, 160, 160);
+  font-family: inherit;
+  padding: 0.4em;
+  flex: 1.5;
+}
+.form-group input::placeholder {
+	color: rgb(0, 0, 0);
+  }
+.form-group input.invalid {
+  border: 1px solid tomato;
+}
+
+.feedback {
+  padding: 1em;
+}
+.feedback p {
+  line-height: 1.4;
+  max-width: 50ch;
+  margin: 10px auto;
+  text-align: center;
+}
+
+form input[type=submit] {
+  display: block;
+  margin: 2em 0 2em auto;
+  padding: 0.6em 1em;
+  font-size: inherit;
+  cursor: pointer;
+  background: var(--brandColor);
+  color: white;
+  border: none;
+}
+form input[type=submit]:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+form input[type=submit]:hover {
+  background: var(--brandColorDark);
+}
+
+@-webkit-keyframes enterFromBottom {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -45%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes enterFromBottom {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -45%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.field-icon {
+  float: right;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+}
+

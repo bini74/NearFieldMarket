@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - vue.js | register &amp; login form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="css/form2.css">
+
+</head>
+<body>
+	<header>
+        <a href="index.html"><img src="/pictures/logo2.PNG" id="nfm" /></a>
+    </header>
+<!-- partial:index.partial.html -->
+<div id="app" v-cloak>
+
+	  <div class="actions">
+			<button :class='[{ active: isDisabled("register") }]' 
+				 @click.prevent='setComponent("register")'>Register
+			</button> 
+			<button :class='[{ active: isDisabled("signin") }]' 
+				 @click.prevent='setComponent("signin")'>Signin
+			</button>
+	  </div>
+
+	  <transition name='form' mode='out-in'>
+			<keep-alive>
+				 <component :feedback='feedback' :is="currentComponent"
+				 @register-form='handleForm' @signin-form='handleForm'></component>
+			</keep-alive>
+	  </transition>
+
+ </div>
+
+ <!-- Register Template -->
+ <template id="registerTemplate">
+	  <form @submit.prevent='onSubmit' ref='form' action="" class='register-form'>
+			<h2>Register</h2>
+			<div class="form-group" >
+				 <label for="firstname">Prénom</label>
+				 <input required type="text" v-model.trim='user.firstname' id='firstname' placeholder="Prénom">
+			</div>
+			<div class="form-group">
+				 <label for="lastname">Nom</label>
+				 <input required type="text" v-model.trim='user.lastname' id='lastname' placeholder="Nom">
+			</div>
+			<div class="form-group">
+				 <label for="email">Adresse électronique</label>
+				 <input required type="email" v-model.trim='user.email' id='email' placeholder="Adresse électronique">
+			</div>
+			<div class="form-group">
+				 <label for="password">Mot de passe</label>
+				 <input required type="password" v-model='user.password' placeholder="Mot de passe" id='password' name="password">
+				 <i class="fa fa-eye" data-cci-control="password-1"></i>
+			</div>
+			<div class="form-group">
+				 <label for="passwordcheck">Vérification du mot de passe</label>
+				 <input required type="password" v-model='user.password' placeholder="Mot de passe" id='confir_password' name="confir_password">
+				 <i class="fa fa-eye" data-cci-control="password-2"></i>
+			</div>
+			<p id="last_line">
+				<label for="show_password">
+				  <input type="checkbox" name="show_password" id="show_password" data-show-password=".password">
+			  Show Password
+				</label>
+			  </p>
+			<input type="submit" :disabled='!isFormValid' value='Register'>
+	  </form>
+ </template>
+
+ <!-- Signin Template -->
+ <template id="signinTemplate">
+	  <form ref='form' @submit.prevent='handleForm' action="" class='signin-form'>
+			<h2>Signin</h2>
+			<div class="form-group">
+				 <label for="email">Adresse électronique</label>
+				 <input required v-model='user.email' type="email" id='email' placeholder="Adresse électronique">
+			</div>
+			<div class="form-group">
+				 <label for="password">Mot de passe</label>
+				 <input required v-model='user.password' type="password" id='password' placeholder="Mot de passe">
+			</div>
+			<input :disabled='!isFormValid' type="submit" value="Signin">
+	  </form>
+ </template>
+
+ <!-- Feedback Template -->
+ <template id="feedbackTemplate">
+	  <div class="feedback">
+			<header>
+				 <h2>{{ title }}</h2>
+			</header>
+			<div v-if='feedback.type === "register"'>
+				<p>Bienvenue <strong>{{ feedback.data | name }}</strong>.</p>
+				<p> Un email vient d'être envoyé à l'adresse {{ feedback.data | email }} afin de compléter ton inscription.</p>
+			</div>
+			<div v-else>
+				 <p>Vous allez être redirigé(e) dans quelques instants...</p>
+			</div>
+	  </div>
+ </template>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js'></script><script  src="/javascript/form.js"></script>
+<script>
+
+
+/ When a user checks the show_password checkbox, we’ll get the password field and change it’s type from password to text. If they uncheck the box, we’ll switch it back to password.
+
+// Listen for click events
+document.addEventListener('click', function(e) {
+  // get the password field
+  var password = document.querySelectorAll(e.target.getAttribute('data-show-password'));
+  // If the clicked element isn't our show password checked, abort
+  if (!e.target.hasAttribute('data-show-password')) {
+    return;
+  }
+  
+  if (password.length < 1) {
+    return;
+  }
+  
+  //loop through each field
+  for (var i = 0; i < password.length; i++) {
+    // Check if the password should be shown or hidden
+		if (e.target.checked) {
+			// Show the password
+			password[i].type = 'text';
+		} else {
+			// Hide the password
+			password[i].type = 'password';
+		}
+  }
+  
+}, false);
+
+	
+	</script>
+</body>
+</html>
