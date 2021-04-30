@@ -177,7 +177,8 @@ body
     position: fixed;
 }
 
-#user{
+.user{
+    z-index: 1;
     top: 1em;
     position: fixed;
     float: right;
@@ -186,14 +187,16 @@ body
     height: 2em;
     width: auto;
 }
-#magasins{
+.magasins{
+    z-index: 1;
     position: fixed;
     right: 8%;
     top: 1em;
     height: 2em;
     width: auto;
 }
-#bag{
+.bag{
+    z-index: 1;
     top: 1em;
     fill: #ffffff;
     position: fixed;
@@ -203,6 +206,7 @@ body
 }
 
 #logo{
+    z-index: 1;
     position: fixed;
     margin-left: 45%;
     margin-right: 55%;
@@ -239,7 +243,7 @@ body
     font-family: 'Raleway', sans-serif;
 }
 
-#store{
+.store{
   float: right;
   vertical-align: middle;
   padding: 1em;
@@ -280,7 +284,47 @@ text-align: left;
 }
 
 
-.dark-mode {
-  background-color: black;
-  color: white;
+
+
+@media (prefers-color-scheme: dark) {
+  body{
+    background-color: #1d1d1d;
+  }
+
+  #menu{
+    background-color: #858585;
+  }
+  #menu:hover{
+    background-color: #858585;
+  }
+
+  #store{
+    float: right;
+    vertical-align: middle;
+    padding: 1em;
+    border-left: 5px solid #414141;
+    height: auto;
+    width: 500px;
+  }
+
+  .store-texte{
+    top: auto;
+    color: rgb(153, 153, 153);
+    text-align: right;
+  }
+
+  #chip{
+    float: left;
+    vertical-align: middle;
+    padding: 1em;
+    border-right: 5px solid #414141;
+    height: auto;
+    width: 500px;
+    }
+    
+    .chip-texte{
+    top: auto;
+    color: rgb(153, 153, 153);
+    text-align: left;
+    }
 }
