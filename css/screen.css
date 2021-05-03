@@ -170,54 +170,126 @@
       font-family: 'Raleway', sans-serif;
     }
 
-    #store{
-      z-index: 1;
-      float: none;
-      height: auto;
-      width: 100%;
-      border: none;
-  }
-
-  .chip{
-    height: auto;
-    float: none;
-    width: 100%;
-    border: none;
-  }
-
-  .card-one{
-    height: auto;
-    width: 100%;
-}
-
-.card-two{
-  height: auto;
-  width: 100%;
-}
-
-.chip-texte, .store-texte{
-  top: auto;
-  font-size: 60px;
-  color: rgb(0, 0, 0);
-}
-
-@media (prefers-color-scheme: dark) {
-  body{
-    background-color: #1d1d1d;
-  }
-
-  #menu{
-    background-color: #ffffff;
-  }
-  #menu:hover{
-    background-color: #ffffff;
-  }
-
-  .store-texte{
-    color: rgb(153, 153, 153);
-  } 
-    .chip-texte{
-    color: rgb(153, 153, 153);
+    .card-pres1{
+      width: 90%;
+      height: 100em;
+      background-image: linear-gradient(to right, rgb(61, 9, 46) , rgb(21, 22, 100));
+      border-radius: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2em;
+      margin-bottom: 5em;
     }
-}
+    
+    .card-pres2{
+      width: 90%;
+      height: 100em;
+      background-image: linear-gradient(to right, rgb(16, 92, 143) , rgb(92, 100, 21));
+      border-radius: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2em;
+      margin-bottom: 5em;
+    }
+    
+    .card-pres3{
+      width: 90%;
+      height: 100em;
+      background-image: linear-gradient(to right, rgb(10, 9, 61) , rgb(21, 91, 100));
+      border-radius: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2em;
+      margin-bottom: 5em;
+    }
+    
+    .card-pres4{
+      width: 90%;
+      height: 100em;
+      background-image: linear-gradient(to right, rgb(53, 30, 5) , rgb(104, 43, 2));
+      border-radius: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2em;
+      margin-bottom: 5em;
+    }
+    
+    .card-pres5{
+      width: 90%;
+      height: 100em;
+      background-image: linear-gradient(to right, rgb(6, 29, 12) , rgb(52, 104, 9));
+      border-radius: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2em;
+      margin-bottom: 5em;
+    }
+    .picture-store{
+      height: 50%;
+      width: 100%;
+      border-radius: 50px 50px 0px 0px;
+      background-image: url(/pictures/store-copie2.jpg);
+      background-size: cover;
+    }
+    
+    .picture-chip{
+      height: 50%;
+      width: 100%;
+      border-radius: 50px 50px 0px 0px;
+      background-image: url(/pictures/chip.jpg);
+      background-size: cover;
+      vertical-align: middle;
+      float: left;
+    }
+    
+    .picture-cart{
+      height: 50%;
+      width: 100%;
+      border-radius: 50px 50px 0px 0px;
+      background-image: url(/pictures/cart\ blue.jpg);
+      background-size: cover;
+      vertical-align: middle;
+      float: left;
+    }
+    
+    .picture-women{
+      height: 50%;
+      width: 100%;
+      border-radius: 50px 50px 0px 0px;
+      background-image: url(/pictures/women-cart.jpg);
+      background-size: cover;
+      vertical-align: middle;
+      float: left;
+    }
+    
+    .picture-privacy{
+      height: 50%;
+      width: 100%;
+      border-radius: 50px 50px 0px 0px;
+      background-image: url(/pictures/privacy/Tiny\ people\ carrying\ key\ to\ open\ padlock.jpg);
+      background-size: cover;
+      vertical-align: middle;
+      float: left;
+    }
+    
+    .text-card{
+      font-family: 'Noto Sans JP', sans-serif;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 45px;
+      vertical-align: middle;
+      width: 45%;
+      float: right;
+      text-align: right;
+      padding: 0.5em;
+    }
+
+    .text-card{
+      font-family: 'Noto Sans JP', sans-serif;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 60px;
+      width: 90%;
+      height: 50%;
+      text-align: justify;
+      padding: 0.5em;
+    }
 }
