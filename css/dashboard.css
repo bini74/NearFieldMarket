@@ -213,12 +213,14 @@ body{
 #search_input{
     margin-left: 25%;
     margin-top: 10em;
-    height: 40px;
+    height: 30px;
     width: 50%;
     border-radius: 50px;
     background-image: url(/pictures/search_black_48dp.svg);
+    background-size: 5%;
     background-position:right;
     background-repeat:no-repeat;
+    font-size: 1rem;
 }
 
 .panel{
